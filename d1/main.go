@@ -13,7 +13,7 @@ import (
 var input string
 
 func main() {
-	// part1()
+	part1()
 	part2()
 }
 
@@ -36,8 +36,6 @@ func part1() {
 	sum := 0
 	for i := 0; i < len(lines); i++ {
 		diff := int(math.Abs(float64(leftList[i]) - float64(rightList[i])))
-		// fmt.Print(leftList[i], " ", rightList[i], " ")
-		// fmt.Print("+", diff)
 		sum += diff
 	}
 
